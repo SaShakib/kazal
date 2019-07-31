@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300&display=swap');
+* {margin: 0; padding: 0;}
+*:focus {
+  outline: none;
+}
+body {
+  font-family: Raleway, Arial;
+  background-color: white;
+  color: #2e2e2e;
+}
+.container {
+  width: 90%;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+
+.header {
+  text-align: center;
+  color: #3b3b3b;
+  margin-bottom: 50px;
+}
+.underline {
+  height: 5px;
+  width: 40px;
+  background-color: #6AAF08;
+  display: inline-block;
+  border-radius: 3px;
+}
+.middle-underline {
+  width: 25px;
+  background-color: #3b3b3b;
+  margin: 0 5px;
+}
+.item {
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  background-color: rgba(157, 154, 154, 0.5);
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid rgb(223, 223, 223);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.fas {
+  position: absolute;
+  top: 85%;
+  right: 20%;
+  font-size: 1.1rem;
+  line-height: 50px; /*this line is just for making the icon*/
+  margin-top: -25px; /*vertically center */
+  color: #6AAF08;
+}
+@media screen and (max-width:320px){
+  .container {
+    width: 100%
+  }
+  .fas {
+    top: 90%;
+    right: 2px;
+
+  }
+}
+.card-texts {
+  border-left: 1px solid rgb(223, 223, 223);
+  padding-left: 30px;
+  margin-left: 50px;
+}
+.item .card-texts .description {
+  font-family: Barlow Condensed;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.item .card-texts h2 {
+  padding: 10px 0 3px 0;
+  font-size: 1.3rem;
+}
+.item .card-texts .profession {
+  font-size: 0.8rem;
+}
+.owl-theme .owl-dots {
+  margin-top: 40px!important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 5px;
+  margin: 5px 4px;
+  background: #6AAF08;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: all .2s ease;
+  border-radius: 5px;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  width: 30px;
+  background-color: #3b3b3b;;
+}
+h2 {
+  color: #6AAF08;
+}
+
